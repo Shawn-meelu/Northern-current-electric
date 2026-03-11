@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Handyman team services from Northern Current Electric" />
+  <title>Handyman Team — Northern Current Electric</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Northern Current Electric</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="handyman.html" class="active">Handyman</a>
+        <a href="tv-low-voltage.html">TV &amp; Low Voltage</a>
+        <a href="plumbing.html">Plumbing</a>
+        <a href="hvac.html">HVAC</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="cta" href="contact.html">Contact</a>
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <h1>Handyman &amp; General Maintenance Team</h1>
+          <p>From small repairs to home improvement projects, our experienced team handles every task with professionalism and attention to detail.</p>
+        </header>
+        <div class="grid cards">
+          <article class="card">
+            <h3>Electrical &amp; Lighting Repairs</h3>
+            <p>We fix flickering lights, replace switches/outlets, and ensure your electrical systems are reliable and safe.</p>
+          </article>
+          <article class="card">
+            <h3>Minor Carpentry &amp; Assembly</h3>
+            <p>From shelving installation to door and cabinet repairs, we help keep your home functioning and organized.</p>
+          </article>
+          <article class="card">
+            <h3>Drywall &amp; Paint Touchups</h3>
+            <p>Patch holes, refresh paint, and make your space feel like new again with clean, seamless finishes.</p>
+          </article>
+          <article class="card">
+            <h3>Safety &amp; Code Checks</h3>
+            <p>We inspect for common hazards and ensure your home is up to code for peace of mind and long-term value.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Northern Current Electric. All rights reserved.</p>
+      <p class="footer-meta">Licensed electrical contractor • 24/7 emergency service</p>
+    </div>
+  </footer>
+
+  <div class="chat-widget" aria-label="AI chat assistant">
+    <button class="chat-toggle" aria-label="Open chat"><span class="chat-icon">💬</span></button>
+    <div class="chat-panel" aria-hidden="true">
+      <header class="chat-header">
+        <span>AI Assistant</span>
+        <button class="chat-close" aria-label="Close chat">×</button>
+      </header>
+      <div class="chat-messages" role="log" aria-live="polite"></div>
+      <form class="chat-form">
+        <input type="text" placeholder="Ask a question..." aria-label="Type a message" required />
+        <button type="submit" aria-label="Send message">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+</html>

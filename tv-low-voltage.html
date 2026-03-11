@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TV and low voltage services from Northern Current Electric" />
+  <title>TV &amp; Low Voltage — Northern Current Electric</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Northern Current Electric</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="handyman.html">Handyman</a>
+        <a href="tv-low-voltage.html" class="active">TV &amp; Low Voltage</a>
+        <a href="plumbing.html">Plumbing</a>
+        <a href="hvac.html">HVAC</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="cta" href="contact.html">Contact</a>
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <h1>TV &amp; Low Voltage Services</h1>
+          <p>Our certified technicians specialize in low voltage installations that keep your home and business connected and secure.</p>
+        </header>
+        <div class="grid cards">
+          <article class="card">
+            <h3>Home Theater Setup</h3>
+            <p>Professional TV mounting, sound bar installation, and cable management so your entertainment looks as good as it sounds.</p>
+          </article>
+          <article class="card">
+            <h3>Structured Wiring</h3>
+            <p>Clean, reliable wiring for audio, data, security cameras, and smart home devices throughout your property.</p>
+          </article>
+          <article class="card">
+            <h3>Security System Wiring</h3>
+            <p>Installation and maintenance for cameras, sensors, and alarm panels to keep your home safe and secure.</p>
+          </article>
+          <article class="card">
+            <h3>Wi-Fi Optimization</h3>
+            <p>Improve coverage, reduce interference, and get stronger signal performance where you need it most.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Northern Current Electric. All rights reserved.</p>
+      <p class="footer-meta">Licensed electrical contractor • 24/7 emergency service</p>
+    </div>
+  </footer>
+
+  <div class="chat-widget" aria-label="AI chat assistant">
+    <button class="chat-toggle" aria-label="Open chat"><span class="chat-icon">💬</span></button>
+    <div class="chat-panel" aria-hidden="true">
+      <header class="chat-header">
+        <span>AI Assistant</span>
+        <button class="chat-close" aria-label="Close chat">×</button>
+      </header>
+      <div class="chat-messages" role="log" aria-live="polite"></div>
+      <form class="chat-form">
+        <input type="text" placeholder="Ask a question..." aria-label="Type a message" required />
+        <button type="submit" aria-label="Send message">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+</html>

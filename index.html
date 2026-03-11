@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Northern Current Electric - Reliable residential and commercial electrical services." />
+  <title>Northern Current Electric</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Northern Current Electric</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" class="active">Home</a>
+        <a href="handyman.html">Handyman</a>
+        <a href="tv-low-voltage.html">TV &amp; Low Voltage</a>
+        <a href="plumbing.html">Plumbing</a>
+        <a href="hvac.html">HVAC</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="cta" href="contact.html">Contact</a>
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Electrician services hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Safe, fast, and reliable electrical services.</h1>
+          <p>Residential, commercial, and emergency electrical work backed by certified technicians. Trusted in the community for decades.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="contact.html">Request a Quote</a>
+            <a class="btn outline" href="handyman.html">View Services</a>
+          </div>
+        </div>
+        <div class="hero-illustration" aria-hidden="true">
+          <div class="lightning"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services" aria-label="Our services">
+      <div class="container">
+        <header class="section-header">
+          <h2>What We Offer</h2>
+          <p>From new installations to repairs and service upgrades, we cover every part of your electrical system.</p>
+        </header>
+        <div class="grid cards">
+          <article class="card">
+            <h3>Residential Electrical</h3>
+            <p>Home wiring, panel upgrades, lighting installations, and smart home integrations—all with clean, professional workmanship.</p>
+          </article>
+          <article class="card">
+            <h3>Commercial &amp; Industrial</h3>
+            <p>Reliable service for offices, retail spaces, warehouses, and industrial facilities. Code-compliant installations and preventive maintenance.</p>
+          </article>
+          <article class="card">
+            <h3>Emergency Repairs</h3>
+            <p>Fast response for power outages, sparking outlets, and safety hazards. Available 24/7 to keep your home or business running.</p>
+          </article>
+          <article class="card">
+            <h3>Energy Efficiency</h3>
+            <p>LED upgrades, energy audits, and EV charger installations that help you save money and reduce your environmental footprint.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about" aria-label="About us">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <h2>About Northern Current Electric</h2>
+          <p>We are a locally owned electrical contractor with a commitment to quality, safety, and great customer service. Our team is licensed, insured, and trained to handle projects of all sizes.</p>
+          <ul class="benefits">
+            <li><strong>Licensed &amp; Insured:</strong> Work backed by industry-standard guarantees.</li>
+            <li><strong>Transparent Pricing:</strong> Clear estimates with no surprises.</li>
+            <li><strong>Reliable Technicians:</strong> Trusted professionals who arrive on time.</li>
+          </ul>
+        </div>
+        <div class="about-visual" aria-hidden="true">
+          <div class="visual-box">
+            <div class="bolt"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-cta" aria-label="Get in touch">
+      <div class="container">
+        <header class="section-header">
+          <h2>Ready to get started?</h2>
+          <p>Whether you need a quick quote or a project estimate, our team is happy to help. Use the chat in the bottom-right or visit our contact page.</p>
+        </header>
+        <div class="button-row" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a class="btn primary" href="contact.html">Contact Us</a>
+          <a class="btn outline" href="handyman.html">View Services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Northern Current Electric. All rights reserved.</p>
+      <p class="footer-meta">Licensed electrical contractor • 24/7 emergency service</p>
+    </div>
+  </footer>
+
+  <div class="chat-widget" aria-label="AI chat assistant">
+    <button class="chat-toggle" aria-label="Open chat"><span class="chat-icon">💬</span></button>
+    <div class="chat-panel" aria-hidden="true">
+      <header class="chat-header">
+        <span>AI Assistant</span>
+        <button class="chat-close" aria-label="Close chat">×</button>
+      </header>
+      <div class="chat-messages" role="log" aria-live="polite"></div>
+      <form class="chat-form">
+        <input type="text" placeholder="Ask a question..." aria-label="Type a message" required />
+        <button type="submit" aria-label="Send message">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="chat.js"></script>
+  <script src="chat.js"></script>
+</body>
+</html>
