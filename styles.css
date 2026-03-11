@@ -202,27 +202,27 @@ textarea {
 }
 
 .hero--home {
-  background-image: url("https://source.unsplash.com/featured/?electrician,tools");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2317a2ff' stop-opacity='0.7'/%3E%3Cstop offset='1' stop-color='%230b0f14' stop-opacity='0.9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g)'/%3E%3Cpath d='M230 90 L330 90 L270 220 L350 220 L250 350 L270 230 L190 230 Z' fill='%23ffffff' fill-opacity='0.75'/%3E%3C/svg%3E");
 }
 
 .hero--handyman {
-  background-image: url("https://source.unsplash.com/featured/?handyman,tools");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2323c1ff' stop-opacity='0.7'/%3E%3Cstop offset='1' stop-color='%2309141e' stop-opacity='0.9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g)'/%3E%3Cpath d='M220 150 L320 100 L380 160 L300 210 L340 250 L260 210 Z' fill='%23ffffff' fill-opacity='0.75'/%3E%3C/svg%3E");
 }
 
 .hero--tv {
-  background-image: url("https://source.unsplash.com/featured/?tv,home");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231fc8ff' stop-opacity='0.7'/%3E%3Cstop offset='1' stop-color='%2308111d' stop-opacity='0.9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g)'/%3E%3Crect x='170' y='110' width='300' height='180' rx='20' ry='20' fill='%23ffffff' fill-opacity='0.18'/%3E%3Cpath d='M270 140 h120 v20 h-120 Z' fill='%23ffffff' fill-opacity='0.25'/%3E%3Cpath d='M280 260 h100 v10 h-100 Z' fill='%23ffffff' fill-opacity='0.25'/%3E%3C/svg%3E");
 }
 
 .hero--plumbing {
-  background-image: url("https://source.unsplash.com/featured/?plumbing,pipe");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2317a2ff' stop-opacity='0.7'/%3E%3Cstop offset='1' stop-color='%23070b15' stop-opacity='0.9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g)'/%3E%3Cpath d='M260 140 a40 40 0 0 1 80 0 v60 a40 40 0 0 1 -80 0 Z' fill='%23ffffff' fill-opacity='0.18'/%3E%3Cpath d='M295 140 v-40 a20 20 0 0 1 40 0 v40' stroke='%23ffffff' stroke-opacity='0.35' stroke-width='14' fill='none'/%3E%3C/svg%3E");
 }
 
 .hero--hvac {
-  background-image: url("https://source.unsplash.com/featured/?hvac,airconditioning");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2300d2ff' stop-opacity='0.7'/%3E%3Cstop offset='1' stop-color='%23020a1c' stop-opacity='0.9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g)'/%3E%3Ccircle cx='320' cy='180' r='70' fill='%23ffffff' fill-opacity='0.18'/%3E%3Cpath d='M320 120 v70 M320 235 v10 M250 180 h70 M340 180 h10' stroke='%23ffffff' stroke-opacity='0.35' stroke-width='14' stroke-linecap='round'/%3E%3C/svg%3E");
 }
 
 .hero--contact {
-  background-image: url("https://source.unsplash.com/featured/?contact,customer");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2317a2ff' stop-opacity='0.7'/%3E%3Cstop offset='1' stop-color='%230b0f14' stop-opacity='0.9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g)'/%3E%3Cpath d='M180 160 h280 v140 h-280 Z' fill='%23ffffff' fill-opacity='0.14' rx='18' ry='18'/%3E%3Cpath d='M220 190 h200 v40 h-200 Z' fill='%23ffffff' fill-opacity='0.2'/%3E%3Cpath d='M220 245 h160 v10 h-160 Z' fill='%23ffffff' fill-opacity='0.2'/%3E%3C/svg%3E");
 }
 
 .hero-copy h1 {
