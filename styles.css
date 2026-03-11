@@ -676,12 +676,42 @@ textarea {
   font-weight: 700;
 }
 
+.chat-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.chat-subtitle {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  font-weight: 400;
+}
+
 .chat-messages {
   flex: 1;
   padding: 1rem;
   overflow-y: auto;
   display: grid;
   gap: 0.55rem;
+}
+
+.chat-message-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.6rem;
+  align-items: flex-end;
+}
+
+.chat-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 1.1rem;
 }
 
 .chat-message {
@@ -693,7 +723,7 @@ textarea {
 
 .chat-message.user {
   justify-self: end;
-  background: rgba(23, 162, 255, 0.18);
+  background: rgba(23, 162, 255, 0.25);
   color: var(--text);
 }
 
@@ -706,6 +736,31 @@ textarea {
 .chat-message.typing {
   opacity: 0.65;
   font-style: italic;
+}
+
+.chat-suggestions {
+  padding: 0.5rem 1rem 0.75rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.chat-suggestion {
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.chat-suggestion:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .chat-form {

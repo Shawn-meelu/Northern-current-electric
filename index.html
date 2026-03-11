@@ -117,10 +117,14 @@
     <button class="chat-toggle" aria-label="Open chat"><span class="chat-icon">💬</span></button>
     <div class="chat-panel" aria-hidden="true">
       <header class="chat-header">
-        <span>AI Assistant</span>
+        <div class="chat-title">
+          <span>AI Assistant</span>
+          <span class="chat-subtitle">Powered by AI</span>
+        </div>
         <button class="chat-close" aria-label="Close chat">×</button>
       </header>
       <div class="chat-messages" role="log" aria-live="polite"></div>
+      <div class="chat-suggestions" aria-label="Quick suggestions"></div>
       <form class="chat-form">
         <input type="text" placeholder="Ask a question..." aria-label="Type a message" required />
         <button type="submit" aria-label="Send message">Send</button>
@@ -128,7 +132,6 @@
     </div>
   </div>
 
-  <script src="chat.js"></script>
   <script src="chat.js"></script>
 </body>
 </html>
