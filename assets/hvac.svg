@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="HVAC icon">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00d4ff" />
+      <stop offset="100%" stop-color="#1d51ff" />
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="640" height="360" rx="40" fill="#061227" />
+  <circle cx="320" cy="180" r="110" fill="url(#grad)" filter="url(#glow)" opacity="0.9" />
+  <path d="M320 90v60" stroke="#0b0f14" stroke-width="22" stroke-linecap="round" />
+  <path d="M320 210v60" stroke="#0b0f14" stroke-width="22" stroke-linecap="round" />
+  <path d="M260 140l40 40" stroke="#0b0f14" stroke-width="22" stroke-linecap="round" />
+  <path d="M380 140l-40 40" stroke="#0b0f14" stroke-width="22" stroke-linecap="round" />
+  <text x="320" y="330" text-anchor="middle" fill="#ffffffaa" font-family="Inter, system-ui, sans-serif" font-size="36">HVAC</text>
+</svg>

@@ -178,46 +178,51 @@ textarea {
   padding: 5.5rem 0 4.5rem;
   position: relative;
   overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(11, 15, 20, 0.95);
+  color: #fff;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(23, 162, 255, 0.5), rgba(0, 0, 0, 0.85) 60%);
+  z-index: -2;
 }
 
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(11, 15, 20, 0.75) 0%, rgba(11, 15, 20, 0.95) 100%);
-  pointer-events: none;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.45;
+  filter: blur(1px);
+  z-index: -1;
 }
 
-/* Background images (place real photos in `assets/` in the repo to make these backgrounds realistic). */
-.hero.hero--home {
-  background-image: url("assets/electrician.jpg");
+.hero--electrical::after {
+  background-image: url("assets/electrical.svg");
 }
 
-.hero.hero--handyman {
-  background-image: url("assets/handyman.jpg");
+.hero--handyman::after {
+  background-image: url("assets/handyman.svg");
 }
 
-.hero.hero--tv {
-  background-image: url("assets/tv.jpg");
+.hero--tv-low-voltage::after {
+  background-image: url("assets/tv-low-voltage.svg");
 }
 
-.hero.hero--plumbing {
-  background-image: url("assets/plumbing.jpg");
+.hero--plumbing::after {
+  background-image: url("assets/plumbing.svg");
 }
 
-.hero.hero--hvac {
-  background-image: url("assets/hvac.jpg");
+.hero--hvac::after {
+  background-image: url("assets/hvac.svg");
 }
 
-.hero.hero--contact {
-  background-image: url("assets/contact.jpg");
+.hero--contact::after {
+  background-image: url("assets/contact.svg");
 }
-
-/* If the local image does not exist, these styles fall back to a solid gradient (set on .hero). */
 
 .hero-inner {
   display: grid;

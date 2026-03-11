@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Plumbing icon">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00c6ff" />
+      <stop offset="100%" stop-color="#0072ff" />
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="640" height="360" rx="40" fill="#081b24" />
+  <path d="M220 120h200v40H220z" fill="url(#grad)" filter="url(#glow)" opacity="0.9" />
+  <path d="M260 160v120h-40v-80h-40v-40h80z" fill="#0b0f14" opacity="0.85" />
+  <path d="M360 160v120h40v-80h40v-40h-80z" fill="#0b0f14" opacity="0.85" />
+  <circle cx="320" cy="240" r="30" fill="rgba(255,255,255,0.2)" />
+  <path d="M320 220v40" stroke="#ffffffaa" stroke-width="12" stroke-linecap="round" />
+  <text x="320" y="330" text-anchor="middle" fill="#ffffffaa" font-family="Inter, system-ui, sans-serif" font-size="36">Plumbing</text>
+</svg>

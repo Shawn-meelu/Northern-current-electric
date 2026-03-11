@@ -16,6 +16,7 @@
       <a class="brand" href="index.html">Northern Current Electric</a>
       <nav class="nav" aria-label="Primary">
         <a href="index.html">Home</a>
+        <a href="electrical.html">Electrical</a>
         <a href="handyman.html">Handyman</a>
         <a href="tv-low-voltage.html">TV &amp; Low Voltage</a>
         <a href="plumbing.html">Plumbing</a>
@@ -30,21 +31,37 @@
   </header>
 
   <main>
-    <section class="section contact" aria-label="Get in touch">
+    <section class="hero hero--contact" aria-label="Contact hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Get in touch</h1>
+          <p>Need a quote, have a question, or want to schedule service? Send us a message and we’ll respond quickly.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact-form">Send a Message</a>
+            <a class="btn outline" href="#details">Call or Email</a>
+          </div>
+        </div>
+        <div class="hero-illustration" aria-hidden="true">
+          <div class="lightning"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="details" class="section" aria-label="Contact information">
       <div class="container">
         <header class="section-header">
-          <h1>Contact Us</h1>
-          <p>Ready to start your project? Send us a message or give us a call.</p>
+          <h2>Contact information</h2>
+          <p>We’re available by phone, email, or through the form below. We’ll respond as soon as possible.</p>
         </header>
         <div class="contact-grid">
           <div class="contact-info">
             <h3>Reach out</h3>
             <p><strong>Phone:</strong> (647) 568-5861</p>
             <p><strong>Email:</strong> <a href="mailto:info@northerncurrentelectric.com">info@northerncurrentelectric.ca</a></p>
-            <p><strong>Address:</strong> Ontario</p>
-            <p>We offer on-site estimates and flexible scheduling.</p>
+            <p><strong>Location:</strong> Ontario, Canada (serving the local region)</p>
+            <p>We offer on-site estimates, emergency service, and flexible scheduling.</p>
           </div>
-          <form class="contact-form" action="#" method="post" onsubmit="alert('Form submitted! (demo)'); return false;">
+          <form id="contact-form" class="contact-form" action="#" method="post" onsubmit="alert('Form submitted! (demo)'); return false;">
             <label>
               Name
               <input type="text" name="name" required placeholder="Your name" />
@@ -63,6 +80,19 @@
             </label>
             <button class="btn primary" type="submit">Send Message</button>
           </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-cta" aria-label="More contact options">
+      <div class="container">
+        <header class="section-header">
+          <h2>Want help right now?</h2>
+          <p>The chat in the bottom-right is available for quick questions, and we’re happy to take your call anytime.</p>
+        </header>
+        <div class="button-row" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a class="btn primary" href="tel:+16475685861">Call Us</a>
+          <a class="btn outline" href="#contact-form">Send a Message</a>
         </div>
       </div>
     </section>

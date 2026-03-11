@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Electrical icon">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#17a2ff" />
+      <stop offset="100%" stop-color="#2ac7ff" />
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="14" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="640" height="360" rx="40" fill="#08131b" />
+  <path d="M320 80l-70 160h65l-40 120 145-190h-70l55-90z" fill="url(#grad)" filter="url(#glow)" />
+  <text x="320" y="320" text-anchor="middle" fill="#ffffffaa" font-family="Inter, system-ui, sans-serif" font-size="36">Electrical</text>
+</svg>
