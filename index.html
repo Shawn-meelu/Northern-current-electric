@@ -53,19 +53,19 @@
           <p>From new installations to repairs and service upgrades, we cover every part of your electrical system.</p>
         </header>
         <div class="grid cards">
-          <article class="card card--residential">
+          <article class="card">
             <h3>Residential Electrical</h3>
             <p>Home wiring, panel upgrades, lighting installations, and smart home integrations—all with clean, professional workmanship.</p>
           </article>
-          <article class="card card--commercial">
+          <article class="card">
             <h3>Commercial &amp; Industrial</h3>
             <p>Reliable service for offices, retail spaces, warehouses, and industrial facilities. Code-compliant installations and preventive maintenance.</p>
           </article>
-          <article class="card card--emergency">
+          <article class="card">
             <h3>Emergency Repairs</h3>
             <p>Fast response for power outages, sparking outlets, and safety hazards. Available 24/7 to keep your home or business running.</p>
           </article>
-          <article class="card card--energy">
+          <article class="card">
             <h3>Energy Efficiency</h3>
             <p>LED upgrades, energy audits, and EV charger installations that help you save money and reduce your environmental footprint.</p>
           </article>
@@ -117,14 +117,10 @@
     <button class="chat-toggle" aria-label="Open chat"><span class="chat-icon">💬</span></button>
     <div class="chat-panel" aria-hidden="true">
       <header class="chat-header">
-        <div class="chat-title">
-          <span>AI Assistant</span>
-          <span class="chat-subtitle">Powered by AI</span>
-        </div>
+        <span>AI Assistant</span>
         <button class="chat-close" aria-label="Close chat">×</button>
       </header>
       <div class="chat-messages" role="log" aria-live="polite"></div>
-      <div class="chat-suggestions" aria-label="Quick suggestions"></div>
       <form class="chat-form">
         <input type="text" placeholder="Ask a question..." aria-label="Type a message" required />
         <button type="submit" aria-label="Send message">Send</button>
@@ -132,6 +128,7 @@
     </div>
   </div>
 
+  <script src="chat.js"></script>
   <script src="chat.js"></script>
 </body>
 </html>

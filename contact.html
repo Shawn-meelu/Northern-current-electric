@@ -30,19 +30,6 @@
   </header>
 
   <main>
-    <section class="hero hero--contact" aria-label="Contact hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h1>Need help? Let’s talk.</h1>
-          <p>Drop us a message or call to schedule your service. We're here to make repairs and upgrades easy.</p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#contact-form">Send a Message</a>
-            <a class="btn outline" href="#contact-info">Contact Details</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="section contact" aria-label="Get in touch">
       <div class="container">
         <header class="section-header">
@@ -50,14 +37,14 @@
           <p>Ready to start your project? Send us a message or give us a call.</p>
         </header>
         <div class="contact-grid">
-          <div id="contact-info" class="contact-info">
+          <div class="contact-info">
             <h3>Reach out</h3>
             <p><strong>Phone:</strong> (647) 568-5861</p>
             <p><strong>Email:</strong> <a href="mailto:info@northerncurrentelectric.com">info@northerncurrentelectric.ca</a></p>
             <p><strong>Address:</strong> Ontario</p>
             <p>We offer on-site estimates and flexible scheduling.</p>
           </div>
-          <form id="contact-form" class="contact-form" action="#" method="post" onsubmit="alert('Form submitted! (demo)'); return false;">
+          <form class="contact-form" action="#" method="post" onsubmit="alert('Form submitted! (demo)'); return false;">
             <label>
               Name
               <input type="text" name="name" required placeholder="Your name" />
@@ -92,14 +79,10 @@
     <button class="chat-toggle" aria-label="Open chat"><span class="chat-icon">💬</span></button>
     <div class="chat-panel" aria-hidden="true">
       <header class="chat-header">
-        <div class="chat-title">
-          <span>AI Assistant</span>
-          <span class="chat-subtitle">Powered by AI</span>
-        </div>
+        <span>AI Assistant</span>
         <button class="chat-close" aria-label="Close chat">×</button>
       </header>
       <div class="chat-messages" role="log" aria-live="polite"></div>
-      <div class="chat-suggestions" aria-label="Quick suggestions"></div>
       <form class="chat-form">
         <input type="text" placeholder="Ask a question..." aria-label="Type a message" required />
         <button type="submit" aria-label="Send message">Send</button>

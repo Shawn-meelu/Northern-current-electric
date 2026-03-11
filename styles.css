@@ -178,51 +178,52 @@ textarea {
   padding: 5.5rem 0 4.5rem;
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at top, rgba(22, 28, 41, 0.75), rgba(11, 15, 20, 0.95));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: rgba(11, 15, 20, 0.95);
 }
 
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(11, 15, 20, 0.85) 0%, rgba(11, 15, 20, 0.8) 55%, rgba(11, 15, 20, 0.95) 100%);
+  background: linear-gradient(180deg, rgba(11, 15, 20, 0.75) 0%, rgba(11, 15, 20, 0.95) 100%);
   pointer-events: none;
 }
+
+/* Background images (place real photos in `assets/` in the repo to make these backgrounds realistic). */
+.hero.hero--home {
+  background-image: url("assets/electrician.jpg");
+}
+
+.hero.hero--handyman {
+  background-image: url("assets/handyman.jpg");
+}
+
+.hero.hero--tv {
+  background-image: url("assets/tv.jpg");
+}
+
+.hero.hero--plumbing {
+  background-image: url("assets/plumbing.jpg");
+}
+
+.hero.hero--hvac {
+  background-image: url("assets/hvac.jpg");
+}
+
+.hero.hero--contact {
+  background-image: url("assets/contact.jpg");
+}
+
+/* If the local image does not exist, these styles fall back to a solid gradient (set on .hero). */
 
 .hero-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: center;
-  position: relative;
-  z-index: 1;
-}
-
-.hero--home {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2317a2ff' stop-opacity='0.7'/%3E%3Cstop offset='1' stop-color='%230b0f14' stop-opacity='0.9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g)'/%3E%3Cpath d='M230 90 L330 90 L270 220 L350 220 L250 350 L270 230 L190 230 Z' fill='%23ffffff' fill-opacity='0.75'/%3E%3C/svg%3E");
-}
-
-.hero--handyman {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2323c1ff' stop-opacity='0.7'/%3E%3Cstop offset='1' stop-color='%2309141e' stop-opacity='0.9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g)'/%3E%3Cpath d='M220 150 L320 100 L380 160 L300 210 L340 250 L260 210 Z' fill='%23ffffff' fill-opacity='0.75'/%3E%3C/svg%3E");
-}
-
-.hero--tv {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231fc8ff' stop-opacity='0.7'/%3E%3Cstop offset='1' stop-color='%2308111d' stop-opacity='0.9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g)'/%3E%3Crect x='170' y='110' width='300' height='180' rx='20' ry='20' fill='%23ffffff' fill-opacity='0.18'/%3E%3Cpath d='M270 140 h120 v20 h-120 Z' fill='%23ffffff' fill-opacity='0.25'/%3E%3Cpath d='M280 260 h100 v10 h-100 Z' fill='%23ffffff' fill-opacity='0.25'/%3E%3C/svg%3E");
-}
-
-.hero--plumbing {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2317a2ff' stop-opacity='0.7'/%3E%3Cstop offset='1' stop-color='%23070b15' stop-opacity='0.9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g)'/%3E%3Cpath d='M260 140 a40 40 0 0 1 80 0 v60 a40 40 0 0 1 -80 0 Z' fill='%23ffffff' fill-opacity='0.18'/%3E%3Cpath d='M295 140 v-40 a20 20 0 0 1 40 0 v40' stroke='%23ffffff' stroke-opacity='0.35' stroke-width='14' fill='none'/%3E%3C/svg%3E");
-}
-
-.hero--hvac {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2300d2ff' stop-opacity='0.7'/%3E%3Cstop offset='1' stop-color='%23020a1c' stop-opacity='0.9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g)'/%3E%3Ccircle cx='320' cy='180' r='70' fill='%23ffffff' fill-opacity='0.18'/%3E%3Cpath d='M320 120 v70 M320 235 v10 M250 180 h70 M340 180 h10' stroke='%23ffffff' stroke-opacity='0.35' stroke-width='14' stroke-linecap='round'/%3E%3C/svg%3E");
-}
-
-.hero--contact {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2317a2ff' stop-opacity='0.7'/%3E%3Cstop offset='1' stop-color='%230b0f14' stop-opacity='0.9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g)'/%3E%3Cpath d='M180 160 h280 v140 h-280 Z' fill='%23ffffff' fill-opacity='0.14' rx='18' ry='18'/%3E%3Cpath d='M220 190 h200 v40 h-200 Z' fill='%23ffffff' fill-opacity='0.2'/%3E%3Cpath d='M220 245 h160 v10 h-160 Z' fill='%23ffffff' fill-opacity='0.2'/%3E%3C/svg%3E");
 }
 
 .hero-copy h1 {
@@ -321,122 +322,21 @@ textarea {
 }
 
 .card {
-  position: relative;
   padding: 1.75rem;
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-}
-
-.card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.22;
-  filter: blur(1px);
-  transition: opacity 0.2s ease;
-}
-
-.card:hover::before {
-  opacity: 0.35;
 }
 
 .card h3 {
   margin-top: 0;
   font-size: 1.4rem;
-  position: relative;
-  z-index: 1;
 }
 
 .card p {
   color: var(--muted);
   margin: 0.85rem 0 0;
-  position: relative;
-  z-index: 1;
-}
-
-.card--residential::before {
-  background-image: url("https://source.unsplash.com/featured/?home,electric");
-}
-
-.card--commercial::before {
-  background-image: url("https://source.unsplash.com/featured/?commercial,building");
-}
-
-.card--emergency::before {
-  background-image: url("https://source.unsplash.com/featured/?lightning,repair");
-}
-
-.card--energy::before {
-  background-image: url("https://source.unsplash.com/featured/?energy,solar");
-}
-
-.card--handyman::before {
-  background-image: url("https://source.unsplash.com/featured/?handyman,tools");
-}
-
-.card--carpentry::before {
-  background-image: url("https://source.unsplash.com/featured/?carpentry,tools");
-}
-
-.card--drywall::before {
-  background-image: url("https://source.unsplash.com/featured/?drywall,repair");
-}
-
-.card--safety::before {
-  background-image: url("https://source.unsplash.com/featured/?safety,inspection");
-}
-
-.card--tv::before {
-  background-image: url("https://source.unsplash.com/featured/?tv,mounting");
-}
-
-.card--wiring::before {
-  background-image: url("https://source.unsplash.com/featured/?wiring,cables");
-}
-
-.card--security::before {
-  background-image: url("https://source.unsplash.com/featured/?security,cameras");
-}
-
-.card--wifi::before {
-  background-image: url("https://source.unsplash.com/featured/?wifi,router");
-}
-
-.card--leak::before {
-  background-image: url("https://source.unsplash.com/featured/?leak,plumbing");
-}
-
-.card--fixtures::before {
-  background-image: url("https://source.unsplash.com/featured/?fixtures,plumbing");
-}
-
-.card--waterheater::before {
-  background-image: url("https://source.unsplash.com/featured/?waterheater");
-}
-
-.card--drains::before {
-  background-image: url("https://source.unsplash.com/featured/?drain,clog");
-}
-
-.card--ac::before {
-  background-image: url("https://source.unsplash.com/featured/?airconditioner");
-}
-
-.card--heating::before {
-  background-image: url("https://source.unsplash.com/featured/?furnace,heating");
-}
-
-.card--iaq::before {
-  background-image: url("https://source.unsplash.com/featured/?airquality");
-}
-
-.card--maintenance::before {
-  background-image: url("https://source.unsplash.com/featured/?maintenance");
 }
 
 /* ---------- About ---------- */
@@ -676,42 +576,12 @@ textarea {
   font-weight: 700;
 }
 
-.chat-title {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-}
-
-.chat-subtitle {
-  font-size: 0.75rem;
-  opacity: 0.7;
-  font-weight: 400;
-}
-
 .chat-messages {
   flex: 1;
   padding: 1rem;
   overflow-y: auto;
   display: grid;
   gap: 0.55rem;
-}
-
-.chat-message-wrapper {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0.6rem;
-  align-items: flex-end;
-}
-
-.chat-badge {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  font-size: 1.1rem;
 }
 
 .chat-message {
@@ -723,7 +593,7 @@ textarea {
 
 .chat-message.user {
   justify-self: end;
-  background: rgba(23, 162, 255, 0.25);
+  background: rgba(23, 162, 255, 0.18);
   color: var(--text);
 }
 
@@ -736,31 +606,6 @@ textarea {
 .chat-message.typing {
   opacity: 0.65;
   font-style: italic;
-}
-
-.chat-suggestions {
-  padding: 0.5rem 1rem 0.75rem;
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.chat-suggestion {
-  padding: 0.45rem 0.85rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  background: rgba(255, 255, 255, 0.06);
-  color: var(--text);
-  cursor: pointer;
-  font-size: 0.85rem;
-  transition: transform 0.15s ease, background 0.15s ease;
-}
-
-.chat-suggestion:hover {
-  transform: translateY(-1px);
-  background: rgba(255, 255, 255, 0.12);
 }
 
 .chat-form {
